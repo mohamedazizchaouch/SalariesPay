@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 
 #[AsCommand(
     name: 'app:SalariesPaySalesDepartment',
-    description: 'Add a short description for your command',
+    description: 'this command eturn salaries and bonnus pay date of a years ',
 )]
 class SalariesPaySalesDepartmentCommand extends Command
 {
@@ -34,7 +34,7 @@ class SalariesPaySalesDepartmentCommand extends Command
     {
         $this
             ->setName('mon-commande')
-            ->setDescription('Description de ma commande')
+            ->setDescription('this command eturn salaries and bonnus pay date of a years')
             ->addOption('Year', 'y', InputOption::VALUE_OPTIONAL, 'Number of salary dates to generate');
     }
     protected function execute(InputInterface $input, OutputInterface $output)
